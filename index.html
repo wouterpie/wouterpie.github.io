@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="website" content="">
+        <meta name="email" content="">
+        <meta name="version" content="1..0">
+        <!-- favicon -->
+        <link href="assets/images/favicon.ico" rel="shortcut icon">
+
+        <!-- Css -->
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.min.css">
+    </head>
+    
+    <body class="font-roboto text-base text-slate-900 dark:text-white dark:bg-slate-900">
+        
+        <!-- Navbar Start -->
+        <nav class="navbar" id="navbar">
+            <div class="container relative flex flex-wrap items-center justify-between">
+                
+              
+                <!-- Navbar Manu -->
+                <div class="navigation lg_992:order-1 lg_992:flex hidden" id="menu-collapse">
+                    <ul class="navbar-nav" id="navbar-navlist">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Start -->
+        <section class="relative md:py-24 py-16 bg-slate-50/50 dark:bg-slate-800/20" id="contact">
+            <div class="container relative">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                    <div class="lg:col-span-7 md:col-span-6">
+                        <img src="assets/images/contact.svg" alt="">
+                    </div>
+
+                    <div class="lg:col-span-5 md:col-span-6">
+                        <div class="lg:ms-5">
+                            <div class="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800 p-6">
+                                <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">Contact Us</h6>
+                                <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">Get in touch !</h4>
+
+                                <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                                    <p class="mb-0" id="error-msg"></p>
+                                    <div id="simple-msg"></div>
+                                    <div class="grid lg:grid-cols-12 gap-3">
+                                        <div class="lg:col-span-6">
+                                            <div class="text-start">
+                                                <label for="name" class="font-medium">Your Name:</label>
+                                                <input name="name" id="name" type="text" class="form-input mt-1 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 focus:border-red-500 dark:border-gray-800 dark:focus:border-red-500 focus:ring-0" placeholder="Name :">
+                                            </div>
+                                        </div>
+        
+                                        <div class="lg:col-span-6">
+                                            <div class="text-start">
+                                                <label for="email" class="font-medium">Your Email:</label>
+                                                <input name="email" id="email" type="email" class="form-input mt-1 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 focus:border-red-500 dark:border-gray-800 dark:focus:border-red-500 focus:ring-0" placeholder="Email :">
+                                            </div>
+                                        </div>
+                                        <div class="lg:col-span-12">
+                                            <div class="text-start">
+                                                <label for="subject" class="font-medium">Your Question:</label>
+                                                <input name="subject" id="subject" class="form-input mt-1 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 focus:border-red-500 dark:border-gray-800 dark:focus:border-red-500 focus:ring-0" placeholder="Subject :">
+                                            </div>
+                                        </div>
+    
+                                        <div class="lg:col-span-12">
+                                            <div class="text-start">
+                                                <label for="comments" class="font-medium">Your Comment:</label>
+                                                <textarea name="comments" id="comments" class="form-input mt-1 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 focus:border-red-500 dark:border-gray-800 dark:focus:border-red-500 focus:ring-0" placeholder="Message :"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="lg:col-span-12">
+                                            <button type="submit" id="submit" name="send" class="py-2 px-5 tracking-wider inline-flex items-center justify-center font-medium rounded bg-red-500 text-white">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Business Partner -->
+        <section class="py-6 border-t border-b border-gray-100 dark:border-gray-800">
+            <div class="container relative">
+                <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/client/amazon.svg" class="h-6" alt="">
+                    </div>
+
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/client/google.svg" class="h-6" alt="">
+                    </div>
+                    
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/client/lenovo.svg" class="h-6" alt="">
+                    </div>
+                    
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/client/paypal.svg" class="h-6" alt="">
+                    </div>
+                    
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/client/shopify.svg" class="h-6" alt="">
+                    </div>
+                    
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/client/spotify.svg" class="h-6" alt="">
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Business Partner -->
+
+        <!-- Start Footer -->
+        <footer class="py-8 bg-slate-800 dark:bg-gray-900">
+            <div class="container">
+                <div class="grid md:grid-cols-12 items-center">
+                    <div class="md:col-span-3">
+                        <a href="#" class="logo-footer">
+                            <img src="assets/images/logo-light.png" class="md:ms-0 mx-auto" alt="">
+                        </a>
+                    </div>
+
+                    <div class="md:col-span-5 md:mt-0 mt-8">
+                        <div class="text-center">
+                            <p class="text-gray-400">© <script>document.write(new Date().getFullYear())</script> <i class="mdi mdi-heart text-red-700"></i> </p>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-4 md:mt-0 mt-8">
+                        <ul class="list-none foot-icon ltr:md:text-right rtl:md:text-left text-center">
+                            <li class="inline"><a href="https://1.envato.market/appever" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="shopping-cart" class="h-4 w-4 align-middle" title="Buy Now"></i></a></li>
+                            <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="dribbble" class="h-4 w-4 align-middle" title="dribbble"></i></a></li>
+                            <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="linkedin" class="h-4 w-4 align-middle" title="Linkedin"></i></a></li>
+                            <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="facebook" class="h-4 w-4 align-middle" title="facebook"></i></a></li>
+                            <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="instagram" class="h-4 w-4 align-middle" title="instagram"></i></a></li>
+                            <li class="inline"><a href="https://x.com/shreethemes" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="twitter" class="h-4 w-4 align-middle" title="twitter"></i></a></li>
+                            <li class="inline"><a href="mailto:support@shreethemes.in" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="mail" class="h-4 w-4 align-middle" title="email"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- End Footer -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-red-500 text-white leading-9"><i class="mdi mdi-arrow-up"></i></a>
+        <!-- Back to top -->
+
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" for="chk">
+                    <i data-feather="moon" class="size-4 text-yellow-500"></i>
+                    <i data-feather="sun" class="size-4 text-yellow-500"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <div class="fixed top-1/3 -right-3 z-50">
+            <a href="" id="switchRtl">
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold rtl:block ltr:hidden" >LTR</span>
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold ltr:block rtl:hidden">RTL</span>
+            </a>
+        </div>
+        <!-- LTR & RTL Mode Code -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
